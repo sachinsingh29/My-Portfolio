@@ -1,0 +1,559 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+.header {
+  position: fixed;
+  margin-top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.active{
+  background-color:black;
+}
+
+.name {
+  color: #fff;
+  position: relative;
+}
+
+.icon {
+  font-size: 19px;
+  color: #fff;
+  margin: 1rem;
+}
+
+.sidebar{
+  display: none;
+}
+
+
+
+.navbar a {
+  display: inline;
+  text-decoration: none;
+  color: #fff;
+  margin: 1.5rem;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: aqua;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  background: url(jeremy-bishop-G9i_plbfDgk-unsplash.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  padding: 10px 10% 0;
+}
+
+.main-heading {
+  max-width: 700px;
+  line-height: 3.5rem;
+}
+
+.text1 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.text2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.text3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.text {
+  color: aqua;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: #fff;
+  background: url(kelly-sikkema-tk9RQCq5eQo-unsplash.jpg) no-repeat;
+  background-position: center;
+  height: 750px;
+  background-size: cover;
+  line-height: 2rem;
+}
+
+.aboutme {
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: underline;
+  margin: 0.5rem;
+}
+
+.about-text {
+  padding-top: 70px;
+  padding-left: 90px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.about-name {
+  color: aqua;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  color: #fff;
+  background-color: blue;
+  height: 30px;
+  width: 110px;
+  margin: 1rem;
+  font-weight: 600;
+  border: 3px solid aqua;
+  border-radius: 15px;
+  margin-top: 2rem;
+  box-shadow: 0 0 aqua, 0 0 15px aqua;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+  color: blue;
+}
+
+/* skills */
+
+.skills {
+  background-color: #081b29;
+  color: #fff;
+  padding-left: 70px;
+  padding-top: 60px;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 22px;
+}
+
+.subtitle span {
+  color: aqua;
+}
+
+.container {
+  padding: 80px 10%;
+}
+
+.technical-bar {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 20px;
+}
+
+.bar {
+  font-size: 25px;
+}
+.technical-bar .bar {
+  margin: 20px 0;
+}
+
+.technical-bar .bar .progress-line {
+  width: 100%;
+  height: 5px;
+  border-radius: 10px;
+  background-color: black;
+  animation: ani 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+@keyframes ani {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.technical-bar .bar .info {
+  margin-bottom: 5px;
+}
+
+/* hjhsjd */
+.technical-bar .bar .info span {
+  font-size: 15px;
+  font-weight: 500;
+  animation: showtext 0.5s 1s linear forwards;
+}
+
+.technical-bar .bar .progress-line span {
+  height: 100%;
+  background-color: #0ef;
+  position: absolute;
+  border-radius: 10px;
+  animation: ani 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.progress-line.html span {
+  width: 90%;
+}
+
+.progress-line.css span {
+  width: 75%;
+}
+
+.progress-line.Javascript span {
+  width: 80%;
+}
+
+.progress-line.java span {
+  width: 55%;
+}
+
+.progress-line.node span {
+  width: 50%;
+}
+
+.progress-line.react span {
+  width: 45%;
+}
+
+.progress-line span::after {
+  position: absolute;
+  padding: 1px 6px;
+  background-color: #000;
+  color: #fff;
+  font-size: 12px;
+  border-radius: 3px;
+  top: -20px;
+  right: -20px;
+  animation: showtext 0.5s 1.5s linear forwards;
+  opacity: 0;
+}
+
+.progress-line.html span::after {
+  width: 90%;
+}
+
+.progress-line.css span::after {
+  width: 75%;
+}
+
+.progress-line.Javascript span::after {
+  width: 80%;
+}
+
+.progress-line.java span::after {
+  width: 55%;
+}
+
+.progress-line.node span::after {
+  width: 50%;
+}
+
+.progress-line.react span::after {
+  width: 45%;
+}
+
+/* prokject */
+
+.head {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.project {
+  height: 200px;
+  border: 3px solid aqua;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 4px;
+  box-shadow: 0 0 aqua, 0 0 15px aqua;
+}
+
+.project-section {
+  background: #081b29;
+  padding-top: 15px;
+  height: 800px;
+  padding-top: 60px;
+}
+
+.project-list {
+  padding-left: 70px;
+  padding-top: 30px;
+  width: 90%;
+  margin: 2rem;
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 30px;
+}
+
+img {
+  padding: 0.5rem;
+  height: 100%;
+  width: 250px;
+  border-radius: 19px;
+}
+
+.para {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0.4rem;
+  overflow: hidden;
+}
+
+.para p{
+  margin-bottom: 70px;
+  opacity: 0.5;
+}
+
+
+.contact-right{
+  width: 60%;
+}
+
+.cont{
+  text-align: center;
+  font-size: 25px;
+  text-decoration:line-through;
+  padding: 40px;
+  position: relative;
+}
+
+.opt{
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.div{
+  width: 50%;
+  height: 50%;
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-weight: 700;
+  
+}
+
+.sec-add{
+  font-size: 20px;
+  font-weight: 300;
+  opacity: 0.5;
+  text-decoration: none;
+  color: #000;
+}
+
+.contact{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-top:20px;
+}
+
+.form{
+  height: 420px;
+  width: 350px;
+  padding: 30px;
+  margin: 30px;
+  display: block;
+  background-color:beige;
+  box-shadow: 0 0 black, 0 0 20px black;
+  border-radius: 15px;
+
+}
+
+input{
+  width: 90%;
+  margin: 15px;
+  height: 30px;
+  border-radius: 25px;
+  padding-left: 35px;
+  border: 3px solid gray;
+}
+
+textarea{
+  margin-top: 15px;
+  margin-left: 15px;
+  height: 130px;
+  width: 88%;
+  border-radius: 15px;
+  border: 3px solid gray;
+  padding:20px;
+
+}
+
+.footer{
+  width: 100%;
+  height: 80px;
+  display: flex;
+  background-color: #000;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-sec{
+  text-align: center;
+  padding-top: 2px;
+}
+
+.heart{
+  color: red;
+}
+.icon2 {
+  font-size: 20px;
+  opacity: 1;
+  color: #fff;
+  margin: 1.5rem;
+  margin-right: 5px;
+}
+
+/* response*/
+
+@media (max-width:600px){
+ .navbar a{
+  display:none;
+ }
+ .navbar i{
+  font-size: 23px;
+  font-weight: 800;
+ }
+
+ .sidebar{
+  position:fixed;
+  top: 0;
+  right:-250px;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 2555, 255, 0.2);
+  backdrop-filter:blur(5px);
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-shadow: -15px 0 15px rgba(0, 0, 0, 0.1);
+ }
+
+ .sidebar a:hover{
+  color: #0ef;
+  box-shadow: 2px 0px 2px black;
+ }
+
+
+ .sidebar a{
+  width: 100%;
+  text-decoration: none;
+  padding: 25px;
+  color:white;
+  font-weight: 600;
+ }
+
+ 
+
+ .sidebar a:first-child{
+  margin-top: 40px;
+ }
+
+ .iconx{
+  margin-left: 25px;
+  margin-top: 25px;
+  font-size: 28px;
+  color: #fff;
+ }
+
+ .project-section {
+  background: #081b29;
+  padding-top: 20px;
+  height: 1000px;
+  padding-top:40px;
+
+}
+.project-list {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-left: 30px;
+}
+
+.skills{
+  padding-left: 20px;
+}
+
+.about-text{
+  padding-left:40px;
+}
+.contact{
+  display: block;
+}
+
+.contact-right{
+  width: 100%;
+}
+.sec-add{
+  font-size: 9px;
+  font-weight: 600;
+}
+.form{
+  width: 305px;
+}
+
+
+img {
+  padding: 0.5rem;
+  height: 100%;
+  width: 150px;
+  border-radius: 19px;
+}
+
+.project {
+  height: 170px;
+}
+
+.para p{
+  padding-top:5px;
+  margin: 0;
+}
+
+
+
+}
+
+.link{
+  font-size: 10px;
+  font-weight: 600;
+}
+
+
+
