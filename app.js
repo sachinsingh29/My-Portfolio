@@ -33,6 +33,10 @@ function portfolio() {
     window.open("", "_blank");
 }
 
+function spotify() {
+  window.open("https://sachinsingh29.github.io/Spotify/", "_blank");
+}
+
 // sidebar
 
 let sidebar = document.querySelector(".sidebar");
